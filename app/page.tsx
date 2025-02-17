@@ -2,6 +2,7 @@
 import Link from "./components/links";
 import useMousePosition from "./components/useMousePosition";
 import { motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
   const { x, y } = useMousePosition();
@@ -22,6 +23,7 @@ export default function Home() {
           <Link name="instagram" href="https://www.instagram.com/picsbymajd" color="bg-pink-500" className="ml-5" />
         </div>
       </div>
+      <Analytics />
     </>
   );
 }
